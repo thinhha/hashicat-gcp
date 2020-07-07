@@ -1,5 +1,5 @@
 locals {
-  network_name = "sad"
+  network_name = "sad2"
   subnet_01 = "${local.network_name}-subnet-01"
   subnet_02 = "${local.network_name}-subnet-02"
   subnet_03 = "${local.network_name}-subnet-03"
