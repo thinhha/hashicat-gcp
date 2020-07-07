@@ -10,8 +10,8 @@ module "test-vpc-module" {
   source  = "app.terraform.io/thinhha-training/network/google"
   version = "2.4.0"
   
-  project_id   = var.project_id
-  network_name = var.network_name
+  project_id   = var.project
+  network_name = local.network_name
 
   subnets = [
     {
