@@ -7,7 +7,9 @@ locals {
 
 
 module "test-vpc-module" {
-  source       = "https://github.com/thinhha/terraform-google-network"
+  source  = "app.terraform.io/thinhha-training/network/google"
+  version = "2.4.0"
+  
   project_id   = var.project_id
   network_name = var.network_name
 
