@@ -58,6 +58,11 @@ resource "google_compute_instance" "hashicat" {
 
   tags = ["http-server"]
 
+  labels = {
+    "billable" = "true",
+    "department" = "devops"
+  }
+  
 }
 
 resource "null_resource" "configure-cat-app" {
